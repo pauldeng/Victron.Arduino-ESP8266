@@ -9,7 +9,7 @@
 	const byte buffsize = 32;
 	const byte value_bytes = 33;
 	const byte label_bytes = 9;
-	const byte num_keywords = 18;
+	const byte num_keywords = 19;
 
 	char keywords[num_keywords][label_bytes] = {
 	"PID",
@@ -20,6 +20,7 @@
 	"VPV",
 	"PPV",
 	"CS",
+	"MPPT",
 	"ERR",
 	"LOAD",
 	"IL",
@@ -38,15 +39,16 @@
 	#define I 4     // ScI
 	#define VPV 5   // PVV
 	#define PPV 6   // PVI = PVV / VPV
-	#define CS 7    // ScS
-	#define ERR 8   // ScERR
-	#define LOAD 9  // SLs
-	#define IL 10   // SLI
-	#define H19 11
-	#define H20 12
-	#define H21 13
-	#define H22 14
-	#define H23 15
-	#define HSDS 16
-	#define CHECKSUM 17
+	#define MPPT 7
+	#define CS 8    // ScS
+	#define ERR 9   // ScERR
+	#define LOAD 10  // SLs
+	#define IL 11   // SLI
+	#define H19 12
+	#define H20 13
+	#define H21 14
+	#define H22 15
+	#define H23 16
+	#define HSDS 17
+	#define CHECKSUM 18
 #endif
